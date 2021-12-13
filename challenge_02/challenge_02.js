@@ -1,4 +1,5 @@
 function generateAstronautTag (exampleAstronaut) {
+  
   const fullString =
     exampleAstronaut["prefix"] +
     ": " +
@@ -7,7 +8,6 @@ function generateAstronautTag (exampleAstronaut) {
     exampleAstronaut["nickname"] +
     '" ' +
     exampleAstronaut["lastName"];
-  // Remember to return a value!
-  console.log(fullString);
+
   return fullString;
 }
