@@ -1,9 +1,7 @@
-function checkGaugeStatus(gauge) {
+const checkGaugeStatus = (gauge) => {
   
-  if (gauge.current >= gauge.min && gauge.current <= gauge.max) {
-    return true;
-  } else {
+  if (gauge.current < gauge.min || gauge.current > gauge.max)
     return false;
-  }
   
-}
+  return true;
+};
