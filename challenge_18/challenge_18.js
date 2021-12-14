@@ -5,10 +5,10 @@ const chooseLunchWinner = (listOfChoices) => {
   
   for(let i = 0; i<listOfChoices.length; i++){
       if (!map[listOfChoices[i]]) {
-          map[listOfChoices[i]]=1;
+          map[listOfChoices[i]] = 1;
       } else {
           ++map[listOfChoices[i]];
-          if (map[listOfChoices[i]]>map[mostFrequentElement]) {
+          if (map[listOfChoices[i]] > map[mostFrequentElement]) {
             mostFrequentElement = listOfChoices[i];
           }
       }
