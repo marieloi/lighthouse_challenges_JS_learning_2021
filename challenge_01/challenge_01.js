@@ -1,4 +1,4 @@
-function parseMessage (origin, message) {
-  const fullString = origin + ": " + message;
+const parseMessage = (origin, message) => {
+  let fullString = `${origin}: ${message}`;
   return fullString;
 };
